@@ -45,6 +45,6 @@ public class EnemyScript : MovingObject {
 
     protected override void OnCantMove<T>(T component)
     {
-        Player hitPlayer = Component as Player;
+        Player hitPlayer = component as Player;
     }
 }
