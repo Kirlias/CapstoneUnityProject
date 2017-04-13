@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     {
         Vector2 movement_Vector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        rd2d.MovePosition(rd2d.position + movementSpeed * (movement_Vector * Time.deltaTime));
+        rd2d.MovePosition(rd2d.position + (movementSpeed/3) * (movement_Vector * Time.deltaTime));
     }
 
    
