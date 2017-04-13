@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;      //Allows us to use SceneManager
 public class Player : MonoBehaviour
 {
 
-    public int movementSpeed = 2;
+    public int movementSpeed;
     private BoxCollider2D boxCollider;
     private Rigidbody2D rd2d;
 
