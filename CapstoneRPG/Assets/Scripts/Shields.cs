@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu]
 public class Shields : Item {
 
     //different types of weapons

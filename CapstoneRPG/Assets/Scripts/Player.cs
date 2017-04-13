@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;      //Allows us to use SceneManager
 public class Player : MonoBehaviour
 {
 
-    public int movementSpeed = 2;
     private BoxCollider2D boxCollider;
     private Rigidbody2D rd2d;
 
@@ -22,7 +21,7 @@ public class Player : MonoBehaviour
     {
         Vector2 movement_Vector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        rd2d.MovePosition(rd2d.position + movementSpeed * (movement_Vector * Time.deltaTime));
+        rd2d.MovePosition(rd2d.position + 2 * (movement_Vector * Time.deltaTime));
     }
 
    
